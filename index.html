@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Em quem votar para prefeito em Valparaiso de Goias</title>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informações sobre candidatos a prefeito em Valparaíso de Goiás. Descubra quem pode ser o melhor prefeito para Valparaíso de Goiás.">
+    <meta name="keywords" content="prefeito, Valparaíso de Goiás, eleições, candidatos, votação">
+    <title>Em Quem Votar para Prefeito em Valparaíso de Goiás</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Em Quem Votar para Prefeito em Valparaíso de Goiás</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#candidates">Candidatos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <body>
-        <p>Prefeito em Valparaiso de Goias</p>
-    </body>
-    
+    <main>
+        <section id="about">
+            <h2>Sobre a Eleição</h2>
+            <p>Informações sobre a próxima eleição para prefeito em Valparaíso de Goiás.</p>
+        </section>
+
+        <section id="candidates">
+            <h2>Candidatos</h2>
+            <p>Conheça os candidatos a prefeito de Valparaíso de Goiás para as próximas eleições.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Inscreva-se para mais informações</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Em Quem Votar para Prefeito em Valparaíso de Goiás</p>
+    </footer>
+</body>
 </html>
