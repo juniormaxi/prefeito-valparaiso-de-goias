@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Telefone: $phone\n";
 
     // Prepara os cabeçalhos do e-mail
-    $headers = "From: webmaster@example.com\r\n"; // Este email deve ser substituído pelo seu email de origem
+    $headers = "From: juniormaxi@hotmail.com\r\n"; // Este email deve ser substituído pelo seu email de origem
     $headers .= "Reply-To: $email\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 

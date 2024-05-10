@@ -1,0 +1,60 @@
+/* Estilos básicos para o corpo da página */
+body {
+    /* Define um fundo degradê de azul */
+    background: linear-gradient(to bottom, #005A9C, #003C6F); /* Tons de azul do mais claro no topo para o mais escuro no fundo */
+    color: white; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2); /* Leve transparência sobre o degradê de fundo */
+}
+
+/* Estilização dos links de navegação */
+nav ul {
+    padding: 0;
+    list-style-type: none; /* Remove marcadores de lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista lado a lado */
+    margin-right: 10px;
+}
+
+nav a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estilos para as seções principais */
+main {
+    padding: 20px;
+    text-align: center; /* Centraliza o texto das seções */
+}
+
+/* Estilos para o formulário */
+form {
+    margin-top: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-top: 5px;
+    width: 95%; /* Tamanho dos campos do formulário */
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2); /* Leve transparência sobre o degradê de fundo */
+}
