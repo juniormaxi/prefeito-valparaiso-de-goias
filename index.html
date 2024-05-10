@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informações sobre candidatos a prefeito em Valparaíso de Goiás. Descubra quem pode ser o melhor prefeito para Valparaíso de Goiás.">
-    <meta name="keywords" content="prefeito, Valparaíso de Goiás, eleições, candidatos, votação">
+    <meta name="description" content="Saiba em quem votar para prefeito em Valparaíso de Goiás. Encontre informações sobre os melhores candidatos a prefeito da cidade.">
     <title>Em Quem Votar para Prefeito em Valparaíso de Goiás</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            background: linear-gradient(to bottom, #005A9C, #003C6F);
+            text-align: center;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 100%;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 5px;
+            width: 95%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Em Quem Votar para Prefeito em Valparaíso de Goiás</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#candidates">Candidatos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>Sobre a Eleição</h2>
-            <p>Informações sobre a próxima eleição para prefeito em Valparaíso de Goiás.</p>
-        </section>
-
-        <section id="candidates">
-            <h2>Candidatos</h2>
-            <p>Conheça os candidatos a prefeito de Valparaíso de Goiás para as próximas eleições.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Inscreva-se para mais informações</h2>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="phone">Telefone:</label>
-                <input type="tel" id="phone" name="phone" required><br>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+        <p>Informe-se sobre os candidatos a prefeito de Valparaíso de Goiás e faça uma escolha informada nas próximas eleições.</p>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <input type="tel" name="phone" placeholder="Seu Telefone" required>
+            <button type="submit">Inscrever-se</button>
+        </form>
     </main>
 
     <footer>
